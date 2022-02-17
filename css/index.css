@@ -1,0 +1,138 @@
+/* 清除默認樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 內減模式 */
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+/* 網頁背景顏色 */
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 40px;
+    background-color: rgba(246, 146, 196, 0.65);
+    text-align: center;
+    line-height: 40px;
+}
+
+.top h2 {
+    font-size: 25px;
+    color: #f3f5f7;
+}
+.title {
+    margin-top: 30px;
+    height: 50px;
+    /*background-color: hotpink;*/
+}
+
+.title .left {
+    float: left;
+    height: 50px;
+    width: 400px;
+
+    /*background-color: skyblue;*/
+}
+
+.title .left a {
+    display: inline-block;
+    padding: 0 15px;
+    /*width: 50px;*/
+    height: 50px;
+    font-size: 18px;
+    color: #727171;
+
+    text-align: center;
+    line-height: 50px;
+
+}
+.title .left span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(135, 206, 235, 0.54);
+}
+.title .left a:hover {
+    color: black;
+    font-weight: 700;
+    background-color: rgba(250, 235, 215, 0.51);
+}
+
+
+
+.title .midLogo {
+    float: left;
+    width: 400px;
+    height: 50px;
+    background-color: gray;
+}
+.title .midLogo h1 img {
+    width: 400px;
+    height: 50px;
+}
+
+.title .right {
+    float: right;
+    width: 400px;
+    height: 50px;
+    /*background-color: goldenrod;*/
+}
+
+.title .right img {
+    float: right;
+    width: 200px;
+    height: 30px;
+}
+
+/* 輪播圖 */
+.banner {
+    margin-top: 30px;
+    height: 400px;
+    /*background-color: rgba(236, 186, 253, 0.54);*/
+}
+.banner .bannerIMG {
+    height: 400px;
+    background-image: url("../images/banner01.jpg");
+}
+.bannerIMG .left {
+    float: left;
+    margin-left: 20px;
+    width: 170px;
+    background-color: rgba(23, 14, 26, 0.7);
+
+}
+.bannerIMG .left li{
+
+    margin: 20px;
+    font-size: 18px;
+
+
+}
+.bannerIMG .left li a {
+    color: #f8f7f7;
+    /*float: left;*/
+    padding-bottom: 5px;
+    /*border-bottom: 2px solid rgba(96, 109, 122, 0.59);*/
+}
+.bannerIMG .left li span {
+    float: right;
+}
